@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font: normal 20px 'Arial';
+            text-align: justify; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo</h1> 
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, reiciendis delectus? Repellat ab tempore necessitatibus dolorem velit voluptatum incidunt, cupiditate culpa aut unde nobis molestias error magnam laudantium assumenda provident!</p>
+    <script>
+        var numero1 = Number(window.prompt('Digite o primeiro número: '))
+        // Uma característica do PROMPT é que ele retorna uma string
+        var numero2 = Number(prompt('Digite o segundo número: '))
+        var soma = numero1 + numero2
+        // Number.parseInt para converter para inteiro
+        // Number.parseFloat para converter para real
+        // Se eu quiser que o JS descubra a característica do número sozinho é só utilizar Number(numero)
+        alert(`A soma entre ${numero1} e ${numero2} é igual a ${soma}`)
+        // Se eu quiser converter Number para String tem duas opções que são: String(numero) ou numero.toString()
+        // (number + number) para adição
+        // (string + string) para concatenação
+    </script>
+</body>
+</html>
