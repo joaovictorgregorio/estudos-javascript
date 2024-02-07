@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            background: linear-gradient(to bottom, pink, black);
+            color: white;
+            font: bold 20px 'Georgia';
+            text-shadow: 2px 2px 2px black;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            line-height: 200px;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="area" onclick="clicar()" onmouseup="soltar()" onmouseout="saiudadiv()"> -->
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        // Está forma de uso não é recomendada, pois foi criado uma variável apenas para executar diversas funções no código!
+        var a = window.document.getElementById('area')
+        // Está forma de criar lista é mesma coisa que criar pelo HTML através dos eventos ON, no meu caso vou usar este método de addEventListener pela organização do código!
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseup', soltar)
+        a.addEventListener('mouseout', saiudadiv)
+        a.addEventListener('mouseenter', entrar)
+
+        function clicar() {
+            // a.style.background = 'yellow'
+            a.innerText = 'Clicou!'
+            a.style.background = 'yellow'
+        }
+
+        function soltar() {
+            a.innerText = 'Soltou o clique'
+            a.style.background = 'linear-gradient(to bottom, pink, black)'
+        }
+
+        function saiudadiv() {
+            a.innerText = 'Fora da <div>'
+            a.style.background = 'black'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou'
+            a.style.background = 'linear-gradient(to bottom, pink, yellow)' 
+        }
+    </script>
+</body>
+</html>
