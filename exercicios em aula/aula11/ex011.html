@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu país</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font: normal 16px 'Arial';
+        }
+
+        h1 {
+            font: bolder 2.5em 'Georgia';
+            background: linear-gradient(to top right, green, yellow);
+            text-align: center;
+            padding: 20px;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        div {
+            display: block;
+            background: black;
+            padding: 10px;
+            width: 400px;
+            margin: auto;
+        }
+
+        label {
+            font: bold 1em 'Georgia';
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: white;
+        }
+
+        input {
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        input.botao {
+            font: bold 1em 'Georgia';
+            cursor: pointer;
+            padding: 5px 20px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brasileiro</h1>
+    <div>
+        <label for="txtpais">Digite seu país: </label>
+        <input type="text" name="txtpais" id="txtpais" placeholder="seu país">
+    </div>
+    <div>
+        <input type="button" value="Verificar" onclick="Verificar()" class="botao">
+    </div>
+    <div>
+        <input type="reset" value="Limpar" class="botao">
+    </div>
+    <div id="resposta">
+
+    </div>
+
+    <script>
+        function Verificar() {
+            var pais = document.querySelector('input#txtpais')
+            var resultado = document.querySelector('div#resposta')
+
+            if (resultado == 'Brasil') {
+                resultado.innerHTML += `Bem-vindo, você é Brasileiro deve ser corintiano!!!`
+                resultado.style.color = 'white'
+            }
+            else {
+                resultado.innerHTML += `Você é Estrangeiro que pena!!!`
+                resultado.style.color = 'white'
+            }
+        }
+    </script>
+</body>
+</html>
