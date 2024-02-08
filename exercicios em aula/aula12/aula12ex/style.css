@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+:root {
+    --cor1: #4545d3;
+}
+
+html,body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background: var(--cor1);
+}
+
+header > h1 {
+    font: bolder 2.1em 'Georgia';
+    letter-spacing: 3px;
+    text-shadow: 20px 0px 20px rgba(0, 0, 0, 0.671);
+    text-align: center;
+    font-variant: small-caps;
+    margin-top: 110px;
+    padding: 15px;
+}
+
+section {
+    background-color: white;
+    width: 650px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    box-shadow: 3px 4px 4px 1px #000000b6;
+}
+
+div {
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+    font: bold 1.5em 'Courier';
+    letter-spacing: 1px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+div#foto_dia {
+    margin-top: 60px;
+}
+
+footer > p {
+    font: bold 16px 'Georgia';
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.671);
+    color: #ffffff;
+    font-variant: small-caps;
+    margin-top: 650px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
