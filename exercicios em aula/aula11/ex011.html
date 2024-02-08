@@ -61,9 +61,6 @@
     <div>
         <input type="button" value="Verificar" onclick="Verificar()" class="botao">
     </div>
-    <div>
-        <input type="reset" value="Limpar" class="botao">
-    </div>
     <div id="resposta">
 
     </div>
@@ -73,9 +70,9 @@
             var pais = document.querySelector('input#txtpais')
             var resultado = document.querySelector('div#resposta')
 
-            resultado = pais
+            resultado.innerHTML = `<p>Você mora em ${pais} bacana demais!</p>`
 
-            if (resultado == 'Brasil') {
+            if (pais == "brasil") {
                 resultado.innerHTML += `Bem-vindo, você é Brasileiro deve ser corintiano!!!`
                 resultado.style.color = 'white'
             }
