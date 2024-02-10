@@ -12,21 +12,22 @@
     </header>
     <section>
         <div>   
-            <label for="ano_nascimento">Ano de Nascimento: </label>
-            <input type="number" name="ano_nascimento" id="ano_nascimento" placeholder="ano nascimento">
+            <label for="inicio">Início: </label>
+            <input type="number" name="inicio" id="inicio" placeholder="digite um número">
         </div>
         <div>
-            <label for="">Sexo: </label>
-            <input type="radio" name="sexo" id="sexo_masculino" checked>
-            <label for="sexo_masculino">Masculino</label>
-            <input type="radio" name="sexo" id="sexo_feminino">
-            <label for="sexo_feminino">Feminino</label>
+            <label for="fim">Fim: </label>
+            <input type="number" name="fim" id="fim" placeholder="digite um número">
         </div>
         <div>
-            <input type="button" value="Verificar" onclick="Verificar()">
+            <label for="passo">Passo: </label>
+            <input type="number" name="passo" id="passo" placeholder="digite um número">
+        </div>
+        <div>
+            <input type="button" value="Verificar" onclick="Contagem()">
         </div>
         <div id="res">
-            Preencha os dados acima para ver o resultado!
+
         </div>
     </section>
     <footer>

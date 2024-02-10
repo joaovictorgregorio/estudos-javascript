@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background: rgba(70, 142, 236);
+    background: #468eec;
     font: normal 16px 'Arial';
 }
 
@@ -12,6 +12,7 @@ header {
 
 h1 {
     text-shadow: 2px 2px 2px black;
+    letter-spacing: 1px;
 }
 
 section {
@@ -31,6 +32,10 @@ label {
     font: bold 16px 'Segoe UI';
     font-variant: small-caps;
     letter-spacing: 0.5px;
+}
+
+input:focus-within {
+    background: #468eec3f; /* O fundo do INPUT fica com coloração personalizada quando selecionado */
 }
 
 input[type=button] {
