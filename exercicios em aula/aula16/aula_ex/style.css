@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+body {
+    background: #468eec;
+    font: normal 16px 'Arial';
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 1px;
+}
+
+section {
+    width: 500px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+div {
+    margin: 0px 0px 20px 10px;
+}
+
+label {
+    font: bold 16px 'Segoe UI';
+    font-variant: small-caps;
+    letter-spacing: 0.5px;
+}
+
+input:focus-within {
+    background: #468eec3f; /* O fundo do INPUT fica com coloração personalizada quando selecionado */
+}
+
+input[type=button] {
+    font: normal 12px 'Segoe UI';
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+input[type=button]:hover {
+    background: rgba(70, 142, 236, 0.548);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+input#finalizar {
+    margin-left: 170px;
+}
+
+input#adicionar {
+    margin-left: 15px;
+}
+
+select {
+    width: 250px;
+    height: 200px;
+    padding: 2px 20px;
+    text-align: center;
+    margin: 8px;
+}
+
+select > option {
+    margin-top: 2px;
+    font: bolder 16px 'Courier';
+}
+
+select:focus-within {
+    background: #468eec3f;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+footer > p {
+    text-shadow: 2px 2px 2px black;
+}

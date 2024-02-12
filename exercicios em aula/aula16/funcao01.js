@@ -1,4 +1,4 @@
-function parimpar (n) {
+function ParImpar (n) {
     if (n%2 == 0) {
         return `PAR`
     }
@@ -7,4 +7,4 @@ function parimpar (n) {
     }
 }
 
-console.log(parimpar(224));
+console.log(ParImpar(8));
